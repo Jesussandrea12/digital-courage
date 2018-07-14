@@ -1,0 +1,21 @@
+/* ================================ work =====================================*/
+#work {
+  background: var(--whitesmoke);
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  /* padding: 5em 0; */
+
+  .work__text {
+    padding: 2em;
+  }
+
+  .work__img img {
+    width: 585px;
+    box-shadow: var(--shad);
+  }
+}

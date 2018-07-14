@@ -1,0 +1,12 @@
+/* Lib */
+@import './lib/variables.css';
+@import './lib/hamburger.css';
+@import './lib/fullpage.css';
+
+/* Layout */
+@import './layout/topbar.css';
+@import './layout/hero.css';
+@import './layout/about.css';
+@import './layout/work.css';
+@import './layout/contact.css';
+@import './layout/footer.css';

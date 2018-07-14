@@ -1,0 +1,20 @@
+/* ============================ about-section ================================*/
+#about {
+  background: var(--lightblue);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  /* padding: 5em 0; */
+
+  .about__text {
+    padding: 2em;
+  }
+
+  .about__img img {
+    width: 585px;
+  }
+}

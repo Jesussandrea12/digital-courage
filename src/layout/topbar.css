@@ -1,0 +1,28 @@
+/* =========================== topbar menu ===================================*/
+/* .header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  z-index: 999;
+} */
+
+.logo {
+  width: 100px;
+  margin: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.burguer__btn {
+  width: 40px;
+  margin: 1em;
+  margin-top: 2em;
+  margin-left: 2em;
+  position: fixed;
+  top: 1em;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+}

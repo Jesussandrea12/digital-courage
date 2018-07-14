@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3248fe;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 12px;
+        font-family: Raleway-Medium, Raleway;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        font-size: 17px;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_3_1" data-name="Symbol 3 – 1" transform="translate(-6676 -624)">
+    <rect id="Rectangle_55" data-name="Rectangle 55" class="cls-1" width="96" height="96" transform="translate(6676 624)"/>
+    <text id="Digital_Courage" data-name="DigitalCourage" class="cls-2" transform="translate(6689.091 666.169)"><tspan x="0" y="0">Digital</tspan><tspan class="cls-3"><tspan x="0" y="17">Courage</tspan></tspan></text>
+  </g>
+</svg>

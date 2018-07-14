@@ -1,0 +1,43 @@
+/* ============================== footer =====================================*/
+footer {
+  padding: 3em 0;
+  background: black;
+}
+
+.footer-text {
+  & .icons {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+
+    & a {
+      margin: 0 .3em;
+    }
+  }
+
+  & p {
+    font-family: var(--open-sans);
+    text-align: center;
+  }
+}
+
+.love {
+  color: var(--dodger-blue);
+}
+
+.copyright {
+  color: var(--dodger-blue);
+}
+
+@media screen and (max-width: 500px) {
+  .footer-text {
+    & .icons {
+      font-size: 1.5em;
+      margin: 1em;
+
+      & a {
+        margin: 0 .3em;
+      }
+    }
+  }
+}
