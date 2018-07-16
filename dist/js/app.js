@@ -1,14 +1,73 @@
-$(document).foundation()
+var myFullpage = new fullpage('#fullpage', {
+	//Navigation
+	menu: '#menu',
+	lockAnchors: false,
+	anchors:['1', '2', '3'],
+	navigationTooltips: ['fullPage', 'Open', 'Easy'],
+	navigation: false,
+	navigationPosition: 'right',
+	showActiveTooltip: false,
+	slidesNavigation: false,
+	slidesNavPosition: 'bottom',
 
-$("[data-toggle-menu]").on("click",function(){
-  $("#menu").toggleClass("is-open")
-})
+	//Scrolling
+	css3: true,
+	scrollingSpeed: 1200,
+	autoScrolling: true,
+	fitToSection: true,
+	fitToSectionDelay: 1000,
+	scrollBar: false,
+	easing: 'easeInOutCubic',
+	easingcss3: 'ease',
+	loopBottom: false,
+	loopTop: false,
+	loopHorizontal: true,
+	continuousVertical: false,
+	continuousHorizontal: false,
+	scrollHorizontally: false,
+	interlockedSlides: false,
+	dragAndMove: false,
+	offsetSections: false,
+	resetSliders: false,
+	fadingEffect: false,
+	normalScrollElements: '#1, #2',
+	scrollOverflow: false,
+	scrollOverflowReset: false,
+	scrollOverflowOptions: null,
+	touchSensitivity: 15,
+	normalScrollElementTouchThreshold: 5,
+	bigSectionsDestination: null,
 
-$("#menu li a").on("click",function(){
-  $("#menu").removeClass("is-open")
-  $('.hamburger').removeClass('is-active');
-})
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
 
-$('.hamburger').on('click', function () {
-  $('.hamburger--spring').toggleClass('is-active');
-})
+	//Design
+	controlArrows: true,
+	verticalCentered: true,
+	sectionsColor : ['#fff', '#E1EDFF', '#F9F9F9'],
+	paddingTop: '3em',
+	paddingBottom: '10px',
+	fixedElements: '#header, .footer',
+	responsiveWidth: 0,
+	responsiveHeight: 0,
+	responsiveSlides: false,
+	parallax: false,
+	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+	//Custom selectors
+	sectionSelector: '.section',
+	slideSelector: '.slide',
+
+	lazyLoading: true,
+
+	//events
+	onLeave: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){},
+	afterRender: function(){},
+	afterResize: function(){width, height},
+	afterResponsive: function(isResponsive){},
+	afterSlideLoad: function(section, origin, destination, direction){},
+	onSlideLeave: function(section, origin, destination, direction){}
+});

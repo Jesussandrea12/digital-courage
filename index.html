@@ -42,95 +42,105 @@
     <meta itemprop="image" content="dist/images/share.png">
 
     <!-- Favicons -->
-
   </head>
-  <body>
-    <!-- <nav role="navigation">
-      <ul id="menu" class="overlay-nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav> -->
+  <body data-lang="en">
 
     <header class="header">
       <img class="logo" src="/dist/images/logo.svg" alt="Logo Digital Courage">
       <img class="burguer__btn" src="/dist/images/icon-burguer.svg" alt="Icon Burguer Button Digital Courage">
     </header>
 
-    <section id="hero">
-      <div class="inner">
-        <div class="hero-wrapper">
-          <div class="hero-wrapper__text">
-            <h2 class="hero-wrapper__text--title">CREATING DIGITAL BUSINESS</h2>
-            <p class="hero-wrapper__text--subtitle">
-              Digital Courage sets the trend in creative promotional sites and web services.
-              Digital and mobile expertise powers our award-winning designs and
-              innovative high-end products.
-            </p>
-            <button class="hero-wrapper__text--cta btn" type="button" name="button">Hire me</button>
+    <div id="fullpage">
+      <section id="hero section-1" class="section fp-table">
+        <div class="inner fp-tableCell">
+          <div class="hero-wrapper">
+            <div class="hero-wrapper__text">
+              <h2 class="hero-wrapper__text--title">CREATING DIGITAL BUSINESS</h2>
+              <p class="hero-wrapper__text--subtitle">
+                Digital Courage sets the trend in creative promotional sites and web services.
+                Digital and mobile expertise powers our award-winning designs and
+                innovative high-end products.
+              </p>
+              <button class="hero-wrapper__text--cta btn" type="button" name="button">Hire me</button>
+            </div>
+            <div class="hero-wrapper__img">
+              <img src="/dist/images/tf-headshots.jpg" alt="Hero Wrapper Heads Image">
+            </div>
           </div>
-          <div class="hero-wrapper__img">
-            <img src="/dist/images/tf-headshots.jpg" alt="Hero Wrapper Heads Image">
+          <div id="section05" class="demo">
+            <a href="#"><span></span></a>
           </div>
         </div>
-        <div id="section05" class="demo">
-          <a href="#"><span></span></a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <div class="inner">
-        <div class="about">
-          <div class="about__text">
-            <h2 class="about__text--title">ABOUT DIGITAL COURAGE</h2>
-            <p class="about__text--subtitle">
-              At  Digital Courage, our job goes beyond
-              just imagining and creating beautiful digital
-              design concepts. Our job is also to make
-              your product as efficient and intuitive as
-              possible. Your product needs to convert
-              successfully. Your product needs to
-              differentiate your business. Our mission is
-              to make that happen.
-            </p>
-          </div>
-          <div class="about__img">
-            <img src="/dist/images/img-2.png" alt="About Website Model Image">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="work">
-      <div class="inner">
-        <div class="work">
-          <div class="work__text">
-            <h2 class="work__text--title">Le Collectionist</h2>
-            <p class="work__text--subtitle">
-              The Collectionist offers access to prestigious villas
-              all around the world. In collaboration with Martin
-              Silvestre & Cassandre Montoriol , we imagined and
-              designed an elegant and exclusive design for their
-              site.
-            </p>
-          </div>
-          <div class="work__img">
-            <img src="/dist/images/lecollectionist-scroll.jpg" alt="Le Collectionist Website Image">
+      <section id="about section-2" class="section">
+        <div class="inner fp-tableCell">
+          <div class="about">
+            <div class="about__text">
+              <h2 class="about__text--title">ABOUT DIGITAL COURAGE</h2>
+              <p class="about__text--subtitle">
+                At  Digital Courage, our job goes beyond
+                just imagining and creating beautiful digital
+                design concepts. Our job is also to make
+                your product as efficient and intuitive as
+                possible. Your product needs to convert
+                successfully. Your product needs to
+                differentiate your business. Our mission is
+                to make that happen.
+              </p>
+            </div>
+            <div class="about__img">
+              <img src="/dist/images/img-2.png" alt="About Website Model Image">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="work section-3" class="section">
+        <div class="inner fp-tableCell">
+          <div class="work">
+            <div class="work__text">
+              <h2 class="work__text--title">Le Collectionist</h2>
+              <p class="work__text--subtitle">
+                The Collectionist offers access to prestigious villas
+                all around the world. In collaboration with Martin
+                Silvestre & Cassandre Montoriol , we imagined and
+                designed an elegant and exclusive design for their
+                site.
+              </p>
+            </div>
+            <div class="work__img">
+              <img src="/dist/images/lecollectionist-scroll.jpg" alt="Le Collectionist Website Image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- JavaScript -->
+    <script type="text/javascript" src="https://alvarotrigo.com/fullPage/dist/fullpage.dragAndMove2.limited.min.js?v2"></script>
+    <script type="text/javascript" src="https://alvarotrigo.com/fullPage/fullpage.extensions.min.js"></script>
+
+    <script type="text/javascript">
+      new fullpage('#fullpage', {
+          anchors: ['page1', 'page2', 'page3', 'page4'],
+          navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+          css3: true,
+          scrollingSpeed: 1000,
+          navigation: true,
+          slidesNavigation: true,
+          responsiveHeight: 330,
+          dragAndMove: true,
+          dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+          controlArrows: false
+      });
+    </script>
     <script src="dist/js/vendor/jquery.min.js"></script>
     <script src="dist/js/vendor/what-input.min.js"></script>
     <script src="dist/js/vendor/fullpage.js"></script>
-    <script src="dist/js/app.min.js"></script>
+    <!-- <script src="dist/js/app.js"></script> -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
     <!-- <script type="text/javascript">
       window.sr=ScrollReveal(),
       sr.reveal(".hero-wrapper-title",{delay:500,easing:"ease",origin:'bottom',scale:'1',duration:2000}),
