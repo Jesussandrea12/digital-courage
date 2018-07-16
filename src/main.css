@@ -1,7 +1,6 @@
 /* Lib */
 @import './lib/variables.css';
 @import './lib/hamburger.css';
-@import './lib/fullpage.css';
 
 /* Layout */
 @import './layout/topbar.css';
