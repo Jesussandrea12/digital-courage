@@ -1,3 +1,8 @@
+// load spinner
+$(window).on('load', function() {
+  $('.spinner__box').removeClass('active')
+});
+
 // scrollify
 // disable on mobile
 const mediaQuery = window.matchMedia("(max-width: 768px)")

@@ -7,7 +7,7 @@
 }
 
 .hero-wrapper {
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
