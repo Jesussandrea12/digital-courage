@@ -5,7 +5,7 @@ $(window).on('load', function() {
 
 // scrollify
 // disable on mobile
-const mediaQuery = window.matchMedia("(max-width: 768px)")
+var mediaQuery = window.matchMedia("(max-width: 768px)")
 responsive(mediaQuery) // Call listener function at run time
 
 function responsive(mediaQuery) {
@@ -148,6 +148,11 @@ $('#nav .content .container-prLink ul li a').on('click', function() {
   $('.content').removeClass('active')
 	$('#nav').removeClass('show')
   $('#nav-btn').removeClass('active')
+})
+// remove menu when click on item | responsive
+$('#nav-mobile .wrapper .container-linkPr ul li a').on('click', function() {
+  $('#nav-btn-mobile').removeClass('active');
+  $('#nav-mobile').removeClass('show');
 })
 
 $('#nav .content .container-prLink ul li a').mouseenter(function(){
