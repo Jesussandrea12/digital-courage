@@ -1,0 +1,86 @@
+.brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+
+  &__text {
+    padding: 8em;
+  }
+
+  &__images {
+    background: var(--lightblue);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: .7s ease all;
+    grid-gap: 10px;
+
+    &--lyft {
+      width: 100px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease all;
+      &:hover {
+        filter: none;
+      }
+    }
+    &--spotify {
+      width: 140px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease all;
+      &:hover {
+        filter: none;
+      }
+    }
+    &--coinbase {
+      width: 140px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease all;
+      &:hover {
+        filter: none;
+      }
+    }
+    &--dropbox {
+      width: 100px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease all;
+      &:hover {
+        filter: none;
+      }
+    }
+    &--slack {
+      width: 140px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease;
+      &:hover {
+        filter: none;
+      }
+    }
+    &--stripe {
+      width: 120px;
+      align-self: center;
+      justify-self: center;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .7s ease all;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}

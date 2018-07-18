@@ -1,11 +1,15 @@
 /* Lib */
 @import './lib/variables.css';
 @import './lib/hamburger.css';
+@import './lib/slick.css';
+@import './lib/slick-theme.css';
 
 /* Layout */
 @import './layout/topbar.css';
 @import './layout/hero.css';
 @import './layout/about.css';
 @import './layout/work.css';
+@import './layout/testimonials.css';
+@import './layout/brands.css';
 @import './layout/contact.css';
 @import './layout/footer.css';

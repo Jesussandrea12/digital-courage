@@ -1,0 +1,15 @@
+<svg id="Symbol_2_3" data-name="Symbol 2 – 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.333 768">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7ddff;
+      }
+
+      .cls-2 {
+        fill: #bfa8ff;
+      }
+    </style>
+  </defs>
+  <path id="Path_2" data-name="Path 2" class="cls-1" d="M840,981c60-87.667,246-155,470-135s337-77,349-232,138.333-170,138.333-170V981Z" transform="translate(-431 -213)"/>
+  <path id="Path_3" data-name="Path 3" class="cls-2" d="M840,981c60-87.667,246-155,470-135s337-77,349-232,138.333-170,138.333-170V981Z" transform="translate(1797.333 981) rotate(180)"/>
+</svg>

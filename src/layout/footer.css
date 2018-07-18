@@ -1,43 +1,36 @@
 /* ============================== footer =====================================*/
-footer {
-  padding: 3em 0;
-  background: black;
+.footer {
+  padding: 5em 0;
+  margin-bottom: 3em;
+  background: white;
+  text-align: center;
 }
 
-.footer-text {
-  & .icons {
-    font-size: 2em;
-    text-align: center;
-    margin: 1em;
-
-    & a {
-      margin: 0 .3em;
-    }
-  }
-
-  & p {
-    font-family: var(--open-sans);
-    text-align: center;
-  }
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em;
 }
 
-.love {
-  color: var(--dodger-blue);
+.icon__box a {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: var(--raleway);
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+  margin: 0 .8em;
+  transition: .3s ease all;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .copyright {
-  color: var(--dodger-blue);
-}
-
-@media screen and (max-width: 500px) {
-  .footer-text {
-    & .icons {
-      font-size: 1.5em;
-      margin: 1em;
-
-      & a {
-        margin: 0 .3em;
-      }
-    }
-  }
+  font-family: var(--open-sans);
+  font-size: .8em;
+  margin-top: 3em;
+  color: var(--gray);
 }

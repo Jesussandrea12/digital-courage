@@ -1,0 +1,139 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  background: var(--lightblue);
+}
+
+.content {
+  margin: auto;
+  padding: 20px;
+  width: 70%;
+  max-width: 1200px;
+  min-width: 300px;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* min-height: 100vh; */
+}
+
+.slick-slider {
+  margin: 30px auto 50px;
+}
+
+.slick-prev,
+.slick-next {
+  color: var(--primary);
+  opacity: 1;
+  height: 50px;
+  width: 50px;
+  padding: 3em;
+  margin-top: -20px;
+
+  path {
+    fill: var(--gray);
+    transition: .3s ease all;
+  }
+
+  &:hover {
+    path {
+      fill: var(--primary);
+    }
+  }
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -35px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: none;
+}
+
+.slick-dots li button:before {
+  /* color: var(--primary); */
+  /* opacity: 1; */
+  font-size: 32px;
+}
+
+.slick-dots li.slick-active button:before {
+  /* color: var(--black); */
+}
+
+.quote-container {
+  min-height: 200px;
+  color: var(--black);
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  outline: none;
+  background: var(--whitesmoke);
+  box-shadow: 0 0 10px rgba(0,0,0,.05), 0 0 10px rgba(0,0,0,.05);
+
+  &:hover {
+    cursor: grab;
+  }
+
+  .portrait {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+
+    img {
+      border: 3px solid var(--secondary);
+      border-radius: 50%;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .quote {
+    padding: 1em;
+    font-size: 1.2em;
+    font-family: var(--open-sans);
+    color: var(--black);
+    text-align: center;
+    font-style: normal;
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    cite {
+      display: block;
+      font-size: 1em;
+      font-style: normal;
+      color: var(--gray);
+      font-family: var(--open-sans);
+
+      span {
+        font-size: 1em;
+        font-family: var(--raleway);
+        color: var(--black);
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.testimonial-text {
+  font-family: var(--open-sans);
+  color: var(--black);
+  font-size: 1em;
+}
+
+.dragging .quote-container {
+  cursor: grabbing;
+}
+
+.slick-dots li button:before {
+  color: var(--primary) !important;
+}

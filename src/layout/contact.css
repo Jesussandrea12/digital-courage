@@ -1,34 +1,96 @@
 /* ============================== contact ====================================*/
-.contact-section {
-  background: #202325;
-  padding: 120px 120px 130px 120px;
+.contact {
+  background: var(--whitesmoke);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-  &-head {
-    font-family: var(--raleway);
-    margin-bottom: 1em;
-    font-size: 2.2em;
-    color: var(--primary);
+  &__box {
+    h4 {
+      font-family: var(--open-sans);
+      font-size: 1.8em;
+      color: var(--gray);
+      font-weight: 400;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.contact__box--form {
+  /* padding: 3em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 10px; */
+  /* flex: 1 1 auto; */
+}
+
+[type=email], [type=text] {
+  border: 2px solid var(--secondary);
+  background: var(--whitesmoke);
+  font-family: var(--open-sans);
+  color: var(--black);
+  box-shadow: none;
+  font-size: 1.2em;
+  padding: .4em 1em;
+  margin: 1em 0;
+  outline: none;
+  width: 100%;
+  transition: .3s ease all;
+
+  &:focus {
+    border: var(--primary) 2px solid;
+    box-shadow: none;
   }
 
-  &-subtitle {
-    font-family: var(--raleway);
-    margin-bottom: .5em;
-    font-size: 1.8em;
+  &::placeholder {
+    font-family: var(--open-sans);
     color: var(--gray);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact-section {
-    padding: 1em;
+[type=email] {
+  margin-left: .3em;
+}
 
-    &-head {
-      font-size: 1.8em;
-      margin-top: 1em;
-    }
+[type=text] {
+  margin-right: .3em;
+}
 
-    &-subtitle {
-      font-size: 1.4em;
-    }
+select {
+  border: 2px solid var(--secondary);
+  background: var(--whitesmoke);
+  font-family: var(--open-sans);
+  color: var(--gray);
+  font-size: 1.125em;
+  padding: .5em;
+  margin: 1em 0;
+  width: 100%;
+  outline: none;
+}
+
+textarea {
+  border: 2px solid var(--secondary);
+  background: var(--whitesmoke);
+  width: calc(100% - 1.2em);
+  padding: .5em;
+  margin: .5em 0;
+  font-family: var(--open-sans);
+  font-size: 1.2em;
+  outline: none;
+  transition: .3s ease all;
+
+  &:focus {
+    border: var(--primary) 2px solid;
   }
 }

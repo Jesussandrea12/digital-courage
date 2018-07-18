@@ -1,4 +1,11 @@
 /* ========================== hero-wrapper ===================================*/
+#home {
+  background: url('../../dist/images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-wrapper {
   min-height: calc(100vh - 100px);
   display: grid;
@@ -7,9 +14,13 @@
   grid-gap: 15px;
   margin: 3em;
 
-  &--text {
-    margin: 1em;
+  &__text {
+    /* margin: 1em; */
     text-align: left;
+
+    &--cta {
+      text-align: center;
+    }
   }
 
   &__img img {

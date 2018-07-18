@@ -1,6 +1,8 @@
 /* ============================ about-section ================================*/
 #about {
   background: var(--lightblue);
+  display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -15,6 +17,6 @@
   }
 
   .about__img img {
-    width: 585px;
+    width: 700px;
   }
 }

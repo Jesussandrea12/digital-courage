@@ -3,6 +3,10 @@
   background: var(--whitesmoke);
 }
 
+#toughtspot {
+  background: #f9f9f9;
+}
+
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,11 +16,33 @@
 
   .work__text {
     padding: 2em;
+
+    &--subtitle {
+      font-size: 1em;
+    }
   }
 
   .work__img img {
     width: 585px;
     box-shadow: var(--shad);
+  }
+}
+
+.more-btn {
+  padding: .8em 2em;
+  margin: 1em 0;
+  border: 2px solid var(--primary);
+  color: var(--black);
+  font-family: var(--open-sans);
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  transition: .3s ease all;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(3px);
   }
 }
 
