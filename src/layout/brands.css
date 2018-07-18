@@ -84,3 +84,23 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .brands {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    align-items: center;
+
+    &__text {
+      padding: 2em;
+    }
+  }
+}
+
+/* @media screen and (max-width: 570px) {
+  .logo {
+    position: absolute;
+  }
+}
+ */

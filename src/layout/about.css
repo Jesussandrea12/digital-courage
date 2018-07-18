@@ -20,3 +20,33 @@
     width: 700px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 3em 0;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .about__img img {
+    width: auto;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .about__img img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .about__img img {
+    max-width: 250px;
+  }
+}

@@ -246,7 +246,7 @@
 }
 #section-details .wrapper .container-text-2 .text p
 {
-    font-family: National-Regular;
+    font-family: var(--open-sans);
     font-size: 24px;
     line-height: 34px;
 }
@@ -358,8 +358,29 @@
 }
 #section-details .wrapper .container-mission .content .cdr .text p
 {
-    font-family: National-Regular;
+    font-family: var(--open-sans);
     font-size: 16px;
 }
 
 /*=====  End of SECTION DETAILS  ======*/
+
+@media screen and (max-width: 768px) {
+  .work {
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: auto;
+  }
+  #section-details .wrapper {
+    width: 90vw;
+    padding: 1em;
+  }
+  #section-details {
+    padding-top: 1em;
+  }
+}
+@media screen and (max-width: 570px) {
+  #section-details .wrapper .container-img .container-screen {
+      height: 40vh;
+      overflow: hidden;
+  }
+}

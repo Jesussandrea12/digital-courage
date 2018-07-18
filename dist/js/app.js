@@ -1,28 +1,40 @@
 // scrollify
-$(function() {
-  $.scrollify({
-		section:".panel",
-    interstitialSection : ".footer",
-    scrollbars:false,
-    before: function(i,panels) {
-      var ref = panels[i].attr("data-section-name");
-      $(".pagination a.active").removeClass("active");
-      $(".pagination a[href=#" + ref + "]").addClass("active");
-    },
+// disable on mobile
+const mediaQuery = window.matchMedia("(max-width: 768px)")
+responsive(mediaQuery) // Call listener function at run time
 
-    after:function(i,panels) {
-      var ref = panels[i].attr("data-section-name");
-      for(var j = 0;j < panels.length;j++) {
-        if(j>i) {
-        }
-      }
-    },
-	});
+function responsive(mediaQuery) {
+  if (mediaQuery.matches) { // If media query matches
+    $.scrollify.disable()
+  } else {
+    $(function() {
+      $.scrollify({
+    		section:".panel",
+        interstitialSection : ".footer",
+        scrollbars:false,
+        before: function(i,panels) {
+          var ref = panels[i].attr("data-section-name");
+          $(".pagination a.active").removeClass("active");
+          $(".pagination a[href=#" + ref + "]").addClass("active");
+        },
 
-  $(".pagination a").on("click",function() {
-    $.scrollify.move($(this).attr("href"));
-  });
-});
+        after:function(i,panels) {
+          var ref = panels[i].attr("data-section-name");
+          for(var j = 0;j < panels.length;j++) {
+            if(j>i) {
+            }
+          }
+        },
+    	});
+
+      $(".pagination a").on("click",function() {
+        $.scrollify.move($(this).attr("href"));
+      });
+    });
+  }
+}
+
+mediaQuery.addListener(responsive) // Attach listener function on state changes
 
 // slick slider
 var prevButton = '<button type="button" data-role="none" class="slick-prev" aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"><path fill="#FFFFFF" d="M 16,16.46 11.415,11.875 16,7.29 14.585,5.875 l -6,6 6,6 z" /></svg></button>',
