@@ -177,128 +177,128 @@ $('#nav-mobile .wrapper .container-projects .back').click(function(){
 window.sr = ScrollReveal();
 // hero wrapper
 sr.reveal(".hero-wrapper__text--title", {
-  delay:500,
+  delay:400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
-});
-sr.reveal(".hero-wrapper__img", {
-  delay:500,
-  easing:"ease",
-  origin:'bottom',
-  scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".hero-wrapper__text--subtitle", {
-  delay:1000,
+  delay:800,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
+});
+sr.reveal(".hero-wrapper__img", {
+  delay:1200,
+  easing:"ease",
+  origin:'bottom',
+  scale:'1',
+  duration:1500
 });
 // about
 sr.reveal(".about__text--title", {
-  delay:500,
+  delay:400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".about__text--subtitle", {
-  delay:1000,
+  delay:800,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".about__img", {
-  delay:1000,
+  delay:1200,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 // work
 sr.reveal(".work__text--title", {
-  delay:1000,
+  delay:400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".work__text--subtitle", {
-  delay:1500,
+  delay:800,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 // branding
 sr.reveal(".brands__text", {
-  delay:1000,
+  delay:400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 // icons
 sr.reveal(".brands__images--lyft", {
-  delay:500,
+  delay:800,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".brands__images--spotify", {
   delay:1200,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".brands__images--coinbase", {
-  delay:1700,
+  delay:1600,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".brands__images--dropbox", {
+  delay:2000,
+  easing:"ease",
+  origin:'bottom',
+  scale:'1',
+  duration:1500
+});
+sr.reveal(".brands__images--slack", {
   delay:2400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
-});
-sr.reveal(".brands__images--slack", {
-  delay:3100,
-  easing:"ease",
-  origin:'bottom',
-  scale:'1',
-  duration:2000
+  duration:1500
 });
 sr.reveal(".brands__images--stripe", {
-  delay:3800,
+  delay:2800,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 // contact
 sr.reveal(".contact__box h2", {
-  delay:300,
+  delay:400,
   easing:"ease",
   origin:'bottom',
   scale:'1',
-  duration:2000
+  duration:1500
 });
 // footer
 sr.reveal(".icon__box a", {
-  delay:300,
+  delay:400,
   easing:"ease",
   origin:'top',
   distance: '-30px',
   scale:'1',
-  duration:2000
+  duration:1500
 });

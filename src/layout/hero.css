@@ -119,4 +119,59 @@
   ul.pagination {
     display: none;
   }
+
+  #section05 a {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .hero-wrapper__text {
+    margin-top: 6em;
+  }
+}
+
+/* iphone 5/SE */
+@media screen and (max-width: 320px) {
+  .hero-wrapper__text {
+    margin-top: 6em;
+  }
+}
+
+/* only for device between 640px and 768px */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .hero-wrapper {
+    &__img img {
+      max-width: 350px;
+    }
+  }
+
+  .btn {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .work .work__text--subtitle {
+    font-size: 1.2em;
+  }
+
+  .more-btn {
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .about__img img {
+    width: auto;
+    max-width: 500px;
+  }
 }

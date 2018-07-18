@@ -1,6 +1,6 @@
 .brands {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   align-content: center;
   align-items: center;
 
@@ -85,6 +85,11 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .brands__text {
+    padding: 2em;
+  }
+}
 @media screen and (max-width: 768px) {
   .brands {
     display: grid;
@@ -98,9 +103,27 @@
   }
 }
 
-/* @media screen and (max-width: 570px) {
-  .logo {
-    position: absolute;
+@media screen and (max-width: 640px) {
+  .brands {
+    &__images {
+      &--lyft {
+        width: 70px;
+      }
+      &--spotify {
+        width: 110px;
+      }
+      &--coinbase {
+        width: 100px;
+      }
+      &--dropbox {
+        width: 70px;
+      }
+      &--slack {
+        width: 100px;
+      }
+      &--stripe {
+        width: 80px;
+      }
+    }
   }
 }
- */

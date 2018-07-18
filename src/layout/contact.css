@@ -1,30 +1,39 @@
 /* ============================== contact ====================================*/
 .contact {
-  background: var(--whitesmoke);
-  display: flex;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 100vh;
 
-  &__box {
+  &__left {
     h4 {
       font-family: var(--open-sans);
-      font-size: 1.8em;
       color: var(--gray);
-      font-weight: 400;
       margin-bottom: 2em;
+    }
+    img {
+      max-width: 500px;
     }
   }
 }
 
-.contact__box--form {
-  /* padding: 3em; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
+.font-light {
+  font-size: 1.125em;
+  color: var(--gray);
+  font-family: var(--open-sans);
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.contact__box {
+  padding: 4em;
+  height: 100vh;
+  background: whitesmoke;
+  display: grid;
+  align-content: center;
 }
 
 .columns {
@@ -36,12 +45,13 @@
 }
 
 [type=email], [type=text] {
-  border: 2px solid var(--secondary);
+  border: 1px solid var(--secondary);
   background: var(--whitesmoke);
   font-family: var(--open-sans);
+  font-size: 1.125em;
+  font-weight: 300;
   color: var(--black);
   box-shadow: none;
-  font-size: 1.2em;
   padding: .4em 1em;
   margin: 1em 0;
   outline: none;
@@ -49,12 +59,13 @@
   transition: .3s ease all;
 
   &:focus {
-    border: var(--primary) 2px solid;
+    border: var(--primary) 1px solid;
     box-shadow: none;
   }
 
   &::placeholder {
     font-family: var(--open-sans);
+    font-weight: 300;
     color: var(--gray);
   }
 }
@@ -68,9 +79,10 @@
 }
 
 select {
-  border: 2px solid var(--secondary);
+  border: 1px solid var(--secondary);
   background: var(--whitesmoke);
   font-family: var(--open-sans);
+  font-weight: 300;
   color: var(--gray);
   font-size: 1.125em;
   padding: .5em;
@@ -80,17 +92,67 @@ select {
 }
 
 textarea {
-  border: 2px solid var(--secondary);
+  border: 1px solid var(--secondary);
   background: var(--whitesmoke);
-  width: calc(100% - 1.2em);
+  width: calc(100% - 1.125em);
   padding: .5em;
   margin: .5em 0;
   font-family: var(--open-sans);
-  font-size: 1.2em;
+  font-weight: 300;
+  font-size: 1.125em;
   outline: none;
   transition: .3s ease all;
 
   &:focus {
-    border: var(--primary) 2px solid;
+    border: var(--primary) 1px solid;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    &__left {
+      padding: 2em;
+    }
+  }
+  .contact__box {
+    padding: 2em 1em;
+    height: auto;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contact {
+    background: white;
+    padding: 2em 0;
+
+    &__left {
+      padding: 1em;
+
+      h4 {
+        font-family: var(--open-sans);
+        color: var(--gray);
+        font-weight: 400;
+        margin-bottom: 2em;
+      }
+      img {
+        max-width: 290px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact {
+    &__left {
+      img {
+        margin: 0;
+        max-width: 280px;
+      }
+    }
   }
 }

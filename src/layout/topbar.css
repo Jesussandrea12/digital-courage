@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 640px) {
   .logo {
     position: absolute;
   }
@@ -324,10 +324,10 @@
 #nav .content
 {
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	top: 0px;
 	left: 0px;
-	padding: 160px 130px 130px 130px;
+	padding: 160px 130px 130px 0;
 	max-height: 100vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -704,6 +704,7 @@
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+  padding: 1em;
 }
 #nav-btn-mobile .content .container-bar
 {

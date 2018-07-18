@@ -1,7 +1,6 @@
 /* ============================== footer =====================================*/
 .footer {
   padding: 5em 0;
-  margin-bottom: 3em;
   background: white;
   text-align: center;
 }
@@ -11,6 +10,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 2em;
+
+  .logo-2 {
+    max-width: 120px;
+  }
 }
 
 .icon__box a {
@@ -20,7 +23,7 @@
   font-weight: bold;
   color: var(--black);
   text-decoration: none;
-  margin: 0 .8em;
+  margin: .5em .8em;
   transition: .3s ease all;
 
   &:hover {
@@ -33,4 +36,22 @@
   font-size: .8em;
   margin-top: 3em;
   color: var(--gray);
+}
+
+@media screen and (max-width: 640px) {
+  .line {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+
+    .logo-2 {
+      margin-top: 1em;
+    }
+  }
+
+  .icon__box a {
+    display: block;
+    margin: 1.5em 0;
+  }
 }

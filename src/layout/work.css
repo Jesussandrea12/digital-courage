@@ -364,11 +364,13 @@
 
 /*=====  End of SECTION DETAILS  ======*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .work {
     grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
     height: auto;
+    width: 100vw;
   }
   #section-details .wrapper {
     width: 90vw;
@@ -378,9 +380,16 @@
     padding-top: 1em;
   }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 640px) {
   #section-details .wrapper .container-img .container-screen {
-      height: 40vh;
-      overflow: hidden;
+    min-height: 300px;
+    height: 40vh;
+    overflow: hidden;
+  }
+  #section-details .wrapper .container-img {
+    margin-top: .5em;
+  }
+  #qonto {
+    background: #f9f9f9;
   }
 }

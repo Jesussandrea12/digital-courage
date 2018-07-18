@@ -8,7 +8,7 @@
   margin: auto;
   padding: 20px;
   width: 70%;
-  max-width: 1200px;
+  max-width: 100vw;
   min-width: 300px;
 
   /* display: flex; */
@@ -136,4 +136,46 @@
 
 .slick-dots li button:before {
   color: var(--primary) !important;
+}
+
+@media screen and (max-width: 640px) {
+  .testimonials {
+    padding: 2em 0;
+  }
+  .testimonial-text {
+    font-size: 1em;
+    text-align: left;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none;
+    opacity: 0;
+
+    path {
+      display: none;
+    }
+  }
+  .content {
+    width: 80%;
+    padding: 0;
+  }
+  .quote-container {
+    margin: .8em;
+    padding: 1em;
+    box-shadow: none;
+  }
+  .quote-container .quote {
+    padding: 1.5em .5em;
+    font-size: 1em;
+    text-align: left;
+    font-style: normal;
+  }
+  .slick-slider {
+    margin: .5em auto .5em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content {
+    width: 77%;
+  }
 }

@@ -150,7 +150,7 @@
 			<ul class="pagination">
 				<li><a href="#home" class="active"><span class="hover-text">Home</span></a></li>
 				<li><a href="#about"><span class="hover-text">about</span></a></li>
-				<li><a href="#lecollectionist"><span class="hover-text">lecollectionist</span></a></li>
+				<li><a href="#qonto"><span class="hover-text">qonto</span></a></li>
 				<li><a href="#toughtspot"><span class="hover-text">toughtspot</span></a></li>
 				<li><a href="#testimonials"><span class="hover-text">testimonials</span></a></li>
 				<li><a href="#brands"><span class="hover-text">brands</span></a></li>
@@ -181,14 +181,15 @@
       </div>
 		</section>
 
-		<section class="panel lecollectionist" data-section-name="lecollectionist">
+		<section class="panel qonto" data-section-name="qonto">
 			<div class="inner">
         <div class="work">
           <div class="work__text">
-            <h2 class="work__text--title">Le Collectionist</h2>
+            <h2 class="work__text--title">Qonto</h2>
             <p class="work__text--subtitle">
-              The Collectionist offers access to prestigious villas
-              all around the world.
+              Qonto is an online banking application that’s
+              intended to be used by people who are
+              self-employed
             </p>
             <button type="button" class="more-btn" name="button">View More</button>
           </div>
@@ -203,7 +204,7 @@
       						<div class="ptn"></div>
       					</div>
       					<div class="container-screen">
-      						<img src="./dist/images/lecollectionist-scroll.jpg" alt="">
+      						<img src="./dist/images/qonto-scroll.jpg" alt="">
       					</div>
       				</div>
       			</div>
@@ -336,26 +337,28 @@
     </section>
 
     <section class="panel contact" id="contact" data-section-name="contact">
-      <div class="contact__box">
+      <div class="contact__left">
         <h2>WHAT ARE YOU LOOKING FOR?</h2>
-        <h4>Drop us a line</h4>
-        <form class="contact__box--form" action="index.html" method="post">
-          <select>
-            <option value="">Interested in ...</option>
-            <option value="mobile-app">Interested in mobile app</option>
-            <option value="website">Interested in website</option>
-            <option value="ui-design">Only UI Design</option>
-            <option value="development">Only Development</option>
-            <option value="concept">Concept Design</option>
-          </select>
-          <div class="columns">
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="" placeholder="Email">
-          </div>
-          <textarea name="name" placeholder="Project description (optional)"></textarea>
-          <button class="btn" type="button" name="button">SEND REQUEST</button>
-        </form>
+        <h4 class="font-light">Drop us a line</h4>
+        <img src="https://cdn.dribbble.com/users/79571/screenshots/4802058/docjuris_illustrations.png">
       </div>
+      <form class="contact__box" action="index.html" method="post">
+        <h4 class="font-light">Describe your project and leave us your contact info, we’ll get back to you within 24 hours.</h4>
+        <select>
+          <option value="">Interested in ...</option>
+          <option value="mobile-app">Interested in mobile app</option>
+          <option value="website">Interested in website</option>
+          <option value="ui-design">Only UI Design</option>
+          <option value="development">Only Development</option>
+          <option value="concept">Concept Design</option>
+        </select>
+        <div class="columns">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="" placeholder="Email">
+        </div>
+        <textarea name="name" placeholder="Project description (optional)"></textarea>
+        <button class="btn" type="button" name="button">SEND REQUEST</button>
+      </form>
     </section>
 
     <section class="footer">
@@ -368,7 +371,7 @@
           <a href="#">Twitter</a>
           <a href="#">Medium</a>
         </div>
-        <img src="./dist/images/logo-2.png" alt="Logo Digital Courage 2">
+        <img class="logo-2" src="./dist/images/logo-2.svg" alt="Logo Digital Courage 2">
       </div>
       <div class="copyright">
         <p>Copyright © 2018 Digital Courage LLC</p>
@@ -384,7 +387,7 @@
     <script src="./dist/js/app.js"></script>
 
     <!-- Css -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/main.css">
   </body>
 </html>
