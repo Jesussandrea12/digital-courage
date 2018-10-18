@@ -1,7 +1,7 @@
 {
-  "name": "jesussandrea12.github.io",
+  "name": "digital-courage",
   "version": "3.3.0",
-  "description": "My personal web site",
+  "description": "Website for Digital Agency",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,15 +18,15 @@
   },
   "homepage": "https://github.com/Jesussandrea12/jesussandrea12.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp-data": "^1.2.1",
-    "gulp-stylus": "^2.6.0",
     "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.26.3",
     "css-mqpacker": "^5.0.1",
     "csswring": "^5.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "~3.9.1",
+    "gulp-data": "^1.2.1",
     "gulp-postcss": "^6.1.1",
     "gulp-rucksack": "^0.1.3",
+    "gulp-stylus": "^2.6.0",
     "lost": "^6.8.1",
     "postcss-cssnext": "^2.11.0",
     "postcss-custom-selectors": "^4.0.1",
@@ -39,7 +39,6 @@
     "split": "^1.0.0"
   },
   "dependencies": {
-    "gulp": "^3.9.1",
     "postcss": "^6.0.5",
     "postcss-custom-properties": "^6.1.0"
   }

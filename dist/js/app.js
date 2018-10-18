@@ -5,7 +5,7 @@ $(window).on('load', function() {
 
 // scrollify
 // disable on mobile
-var mediaQuery = window.matchMedia("(max-width: 768px)")
+var mediaQuery = window.matchMedia("(max-width: 992px)")
 responsive(mediaQuery) // Call listener function at run time
 
 function responsive(mediaQuery) {

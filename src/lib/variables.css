@@ -1,6 +1,7 @@
 :root {
-  --raleway: 'Raleway', sans-serif;
-  --open-sans: 'Open Sans', sans-serif;
+  /* change of font */
+  --raleway: 'Muli', sans-serif;
+  --open-sans: 'Lato', sans-serif;
   --primary: #3248FE;
   --secondary: #F9B875;
   --black: #3B3B3B;
