@@ -1,5 +1,5 @@
 # Digital Courage - Landing page (Template)
-This branch contains the generated files for the [site of digital courage](https://jesussandrea.com/digital-courage/)'
+This branch contains the generated files for the [site of digital courage](https://jesussandrea.com/digital-courage/)
 
 I believe that every website must be beautiful, responsive and optimized. But not only that, It should inspire, communicate and be user-friendly. That’s why I decided to design and create a simple landing page, easy to customize. Totally responsive. Without using too many "heavy" dependencies like jQuery. This website features CSS Grids (which is freakin' awesome), SVG Animations, Etc.
 
